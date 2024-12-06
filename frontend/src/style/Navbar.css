@@ -1,0 +1,158 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  .navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .navbar-brand h2 {
+    margin: 0;
+  }
+  #offer{
+    text-align: center;
+  }
+  .offer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .offer div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+  }
+  .offer div img{
+    width: 100%;
+    border-radius: 5px;
+  }
+  .offer div img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  
+  .navbar-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .navbar-links ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  
+  .navbar-links ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+
+  .home-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 30px;
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .search-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .cart-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .cart-link {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .cart-icon {
+    width: 50px;
+    height: auto;
+    color: white;
+  }
+
+  .search-bar{
+    width: 500px;
+  }
+  .women-cloth{
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .women-cloth img{
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+  }
+  .mens-cloth{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .mens-cloth img{
+    width: 100%;
+    border-radius: 8px;
+  }
+
+
+  /* <h2 id='offer'>Offers</h2>
+  <div className='offer'>
+    <div><img src="https://tse1.mm.bing.net/th?id=OIP.d2HIo5-Y4paWDSLxv_AbEAHaHa&pid=Api&P=0&h=180" alt="" /></div>
+    <div><img src="https://tse1.mm.bing.net/th?id=OIP.sb9O9zCjQQlryPLyv45uvwHaGz&pid=Api&P=0&h=180" alt="" /></div>
+    <div><img src="https://tse4.mm.bing.net/th?id=OIP.E0Jv1ptFkZY8mQ_U0Xu4EAHaHa&pid=Api&P=0&h=180" alt="" /></div>
+    <div><img src="https://tse1.mm.bing.net/th?id=OIP.QQfQNHqF4UtIwgNlzm-9zwHaI4&pid=Api&P=0&h=180" alt="" /></div>
+    <div><img src="https://tse2.mm.bing.net/th?id=OIP.CuIsPoKIYVJgsCW92vGAdwHaJ4&pid=Api&P=0&h=180" alt="" /></div>
+  </div>
+  <div className="women-cloth">
+    <img src="https://marketplace.canva.com/EAFVHstxnwk/1/0/800w/canva-beige-aesthetic-exclusive-fashion-wear-collection-clothing-banner-yv-HRWs1aMc.jpg" alt="" />
+  </div>
+  <div className="mens-cloth">
+    <img src="http://www.alexinternational.ro/wp-content/uploads/2016/02/BANNER-MENS-CLOTHING-1024x213.jpg" alt="" />
+  </div> */

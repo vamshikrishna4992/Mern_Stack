@@ -1,0 +1,120 @@
+.register-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  .login-container{
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .login-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 93%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  p {
+    font-size: 14px;
+  }
+  
+  /* Media Queries for different screen sizes */
+  
+  /* Mobile screens */
+  @media (max-width: 600px) {
+    .register-container {
+      width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .form-group input {
+      padding: 12px;
+    }
+  
+    button {
+      font-size: 18px;
+      padding: 12px;
+    }
+  }
+  
+  /* Tablet screens */
+  @media (min-width: 601px) and (max-width: 768px) {
+    .register-container {
+      width: 80%;
+    }
+  
+    button {
+      font-size: 18px;
+      padding: 12px;
+    }
+  }
+  
+  /* Desktop screens */
+  @media (min-width: 769px) {
+    .register-container {
+      width: 60%;
+    }
+  
+    .form-group input {
+      padding: 14px;
+    }
+  
+    button {
+      font-size: 18px;
+      padding: 15px;
+    }
+  }
