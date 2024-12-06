@@ -1,26 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import '../style/Banner.css'
+import { fetchProducts } from '../services/apiProducts';
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
   
-  // Fetch products when the component is mounted
+
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const data = await fetchProducts();  // Fetch products from API
+        const data = await fetchProducts();  
         setProducts(data);
       } catch (error) {
         console.error('Error fetching products:', error);
       }
     };
     loadProducts();
-  }, []); // Empty array ensures this runs only once on component mount
+  }, []); 
 
-  // Handle Add to Cart button (placeholder function)
+  
   const handleAddToCart = (product) => {
     console.log('Added to cart:', product);
-    // Logic for adding product to the cart can go here
+    
   };
 
 
@@ -43,7 +44,7 @@ const HomePage = () => {
     );
   };
 
-  // Auto-slide every 5 seconds
+  
   useEffect(() => {
     const interval = setInterval(nextSlide, 3500);
     return () => clearInterval(interval); // Cleanup interval on unmount
@@ -52,6 +53,9 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <h2 className='welcome'>Welcome to Our Store</h2>
+      <div className="des">
+        <img src="" alt="" />
+      </div>
       <div className="banner-slider">
       <div
         className="slides"
