@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:5000/api/auth'; // Base URL for the API
+const apiUrl = 'http://localhost:5100/api/auth'; // Base URL for the API
 
 
 
@@ -9,7 +9,7 @@ export const fetchUsers = async () => {
     const response = await axios.get(`${apiUrl}/users`);
     return response.data;
   } catch (error) {
-    console.error('Error fetching users:', error);
+    console.log('Error fetching users:', error);
     throw error;
   }
 };

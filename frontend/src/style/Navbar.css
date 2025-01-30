@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: black;
     color: white;
     padding: 10px 20px;
     height: 40px;
@@ -15,6 +15,7 @@
   }
   .navbar-brand h2 {
     margin: 0;
+    color: yellow;
   }
   #offer{
     text-align: center;
@@ -55,7 +56,7 @@
   }
   
   .navbar-links ul li a:hover {
-    background-color: #555;
+   color: yellow;
     border-radius: 5px;
   }
 
@@ -93,7 +94,7 @@
   .search-bar {
     width: 80%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 0.5px solid yellow;
     border-radius: 4px;
     font-size: 16px;
   }

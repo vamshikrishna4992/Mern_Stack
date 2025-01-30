@@ -26,7 +26,7 @@ const RegisterPage = () => {
     setError('');
 
     try {
-      await axios.post('http://localhost:5000/api/auth/register', {
+      await axios.post('http://localhost:5100/api/auth/register', {
         name,
         email,
         password,
@@ -37,7 +37,7 @@ const RegisterPage = () => {
     } catch (err) {
       setLoading(false);
       setError('Registration failed. Please try again.');
-      console.error('Error:', err);  // Log the error for debugging
+      // console.error('Error:', err);  // Log the error for debugging
     }
   };
 

@@ -19,7 +19,7 @@ const LoginPage = () => {
 
     // API call to login user
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', {
+      const response = await axios.post('http://localhost:5100/api/auth/login', {
         email,
         password,
       });

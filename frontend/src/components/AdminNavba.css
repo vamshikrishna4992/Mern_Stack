@@ -1,22 +1,27 @@
 .admin-navbar{
-    background-color: #90A4AE;
-    height: 40px;
-    padding: 7px;
+    background-color: black;
+    height: 15px;
+    padding-bottom: 35px;
+    border: 0.5px solid yellow;
+    align-content: center;
+    color: white;
 }
 
 .admin-navbar ul {
     display: flex;
     list-style: none;
     padding: 0;
+    
   }
   
   .admin-navbar ul li {
     margin-right: 20px;
+    
   }
   
   .admin-navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: yellow;
     font-size: 18px;
     padding: 10px;
     /* padding: 5px 10px; */

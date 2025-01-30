@@ -1,49 +1,51 @@
 import axios from "axios";
 
-const apiURL = 'http://Localhost:5000/api';
+
+
+const apiURL = 'http://localhost:5100/api/products';
 
 export const fetchProducts = async ()=>{
     try {
-        const response = await axios.get(`${apiURL}/products`);
+        const response = await axios.get(apiURL);
         return response.data;
     } catch (error) {
-        console.error('Error fetching products:',error)
+        console.log('Error fetching products:',error)
     }
 }
 
-export const fetchProductById = async (prouctId)=>{
+export const fetchProductById = async (productId)=>{
     try {
-        const response = await axios.get(`${apiURL}/produts/${prouctId}`);
+        const response = await axios.get(`${apiURL}/${productId}`);
         return response.data
     } catch (error) {
-        console.error('Error fetching product by id',error)
+        console.log('Error fetching product by id',error)
     }
 }
 
 export const createProduct = async (productdata)=>{
     try {
-        const response = await axios.post(`${apiURL}/products`,productdata);
+        const response = await axios.post(`${apiURL}`,productdata);
         return response.data
     } catch (error) {
-        console.error('Error creating product',error)
+        console.log('Error creating product',error)
     }
 }
 
 export const updateProduct = async(productId,productdata)=>{
     try {
-        const response = await axios.put(`${apiURL}/products/${productId}`,productdata);
+        const response = await axios.put(`${apiURL}/${productId}`,productdata);
         return response.data
     } catch (error) {
-        console.error('Error Updating Product')
+        console.log('Error Updating Product')
     }
 }
 
 export const deleteProduct = async (productId)=>{
     try {
-        const response = await axios.delete(`${apiURL}/products/${productId}`);
+        const response = await axios.delete(`${apiURL}/${productId}`);
         return response.data
     } catch (error) {
-        console.error('Error Deleting Product')   
+        console.log('Error Deleting Product')   
     }
 }
 
